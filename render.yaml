@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: football-analyzer-mobile
+    runtime: docker
+    plan: free
+    envVars:
+      - key: APP_ACCESS_TOKEN
+        generateValue: true
+      - key: DATA_DIR
+        value: /app/data

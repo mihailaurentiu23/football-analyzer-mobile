@@ -1,0 +1,16 @@
+# OPTIONAL: paid configuration with a persistent disk (unlike free plan).
+# Check Render's current pricing before creating this service.
+services:
+  - type: web
+    name: football-analyzer-mobile-persistent
+    runtime: docker
+    plan: starter
+    disk:
+      name: football-analyzer-data
+      mountPath: /app/data
+      sizeGB: 1
+    envVars:
+      - key: APP_ACCESS_TOKEN
+        generateValue: true
+      - key: DATA_DIR
+        value: /app/data

@@ -1,0 +1,17 @@
+{
+  "id": "/",
+  "name": "Football Analyzer Mobile",
+  "short_name": "Football Analyzer",
+  "description": "Analize sportive și statistici ale meciurilor de fotbal",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#071a2e",
+  "theme_color": "#071a2e",
+  "orientation": "portrait-primary",
+  "lang": "ro",
+  "icons": [
+    {"src":"/static/icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"/static/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
